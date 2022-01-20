@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <div>
       <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="/home">
+        <a class="navbar-brand" href="/">
           Rooms
         </a>
         <button
