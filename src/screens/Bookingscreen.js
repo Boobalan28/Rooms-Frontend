@@ -101,16 +101,14 @@ function Bookingscreen({match}) {
                            <p>Rent Per Day : <b>{room.rentperday}</b></p>
                            <h1><b>Total Amount : {totalAmount} /-</b></h1>
 
-                           <StripeCheckout
-            amount={totalAmount *100}
+            <StripeCheckout
             shippingAddress
-            token={tokenHander}
+            amount={totalAmount *100}
+            token={ontoken}
+            currency='inr'
             stripeKey='pk_test_51KFsXwSIU6m9yyF3nXJSqrQPZ9LewUM1X0bkkpLXulyJcfI8UmINDGWXP8SiV6AsxTxvvM4wP9Glc1BYCv8KHbYp00VJpx1JeP'
-            currency='INR'
             >
-
                   <button className='btn btn-primary'>Pay Now</button>
-
             </StripeCheckout>
                            </div>      
                       </div>
